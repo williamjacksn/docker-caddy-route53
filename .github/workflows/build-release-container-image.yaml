@@ -1,0 +1,30 @@
+name: Build the release container image
+
+on:
+  release:
+    types:
+    - published
+
+jobs:
+
+  build:
+    name: Build the release container image
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
+    - name: Get the release tag
+      id: get-release-tag
+      run: echo ::set-output name=release-tag::${GITHUB_REF/refs\/tags\//}
+    - name: Log in to the GitHub registry
+      run: docker login --password "${{ secrets.GITHUB_TOKEN }}" --username "${GITHUB_ACTOR}" docker.pkg.github.com
+    - name: Set the image name and tag
+      id: set-image-name
+      run: echo ::set-output name=image-name::caddy:${{ steps.get-release-tag.outputs.release-tag }}
+    - name: Set the full GitHub image name
+      id: set-github-image-name
+      run: echo ::set-output name=image-name::docker.pkg.github.com/${GITHUB_REPOSITORY}/${{ steps.set-image-name.outputs.image-name }}
+    - name: Build the container image
+      run: docker build --file Dockerfile --tag ${{ steps.set-github-image-name.outputs.image-name }} .
+    - name: Push the image to the GitHub registry
+      run: docker image push ${{ steps.set-github-image-name.outputs.image-name }}
