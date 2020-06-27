@@ -1,0 +1,12 @@
+# Example usage
+
+example.com {
+ log {
+  output stdout
+  format logfmt
+ }
+ reverse_proxy <upstream-server>
+ tls <email@example.com> {
+  dns route53
+ }
+}
