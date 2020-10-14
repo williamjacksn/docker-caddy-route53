@@ -4,7 +4,7 @@ version: '3.8'
 
 services:
   caddy:
-    image: docker.pkg.github.com/williamjacksn/docker-caddy-route53/caddy-route53
+    image: ghcr.io/williamjacksn/caddy-route53
     environment:
       AWS_ACCESS_KEY_ID: (set in docker-compose.override.yaml)
       AWS_SECRET_ACCESS_KEY: (set in docker-compose.override.yaml)
