@@ -7,11 +7,9 @@ services:
       AWS_ACCESS_KEY_ID: (set in compose.override.yaml)
       AWS_SECRET_ACCESS_KEY: (set in compose.override.yaml)
     volumes:
-      - caddy-data:/data
-      - ./caddy:/etc/caddy
+      - ./volumes/config:/config
+      - ./volumes/data:/data
+      - ./volumes/etc/caddy:/etc/caddy
     ports:
       - 80:80
       - 443:443
-
-volumes:
-  caddy-data:
