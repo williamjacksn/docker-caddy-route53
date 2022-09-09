@@ -3,7 +3,7 @@
 example.com {
  log {
   output stdout
-  format logfmt
+  format console
  }
  reverse_proxy <upstream-server>
  tls <email@example.com> {
