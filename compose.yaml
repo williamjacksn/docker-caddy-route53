@@ -1,15 +1,6 @@
-# Example usage
-
 services:
-  caddy:
-    image: ghcr.io/williamjacksn/caddy-route53
-    environment:
-      AWS_ACCESS_KEY_ID: (set in compose.override.yaml)
-      AWS_SECRET_ACCESS_KEY: (set in compose.override.yaml)
+  go:
+    image: golang:1.19.1-alpine3.16
+    init: true
     volumes:
-      - ./volumes/config:/config
-      - ./volumes/data:/data
-      - ./volumes/etc/caddy:/etc/caddy
-    ports:
-      - 80:80
-      - 443:443
+      - ./:/go
