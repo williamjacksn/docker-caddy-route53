@@ -180,8 +180,8 @@ github.com/caarlos0/ctrlc v1.0.0/go.mod h1:CdXpj4rmq0q/1Eb44M9zi2nKB0QraNKuRGYGr
 github.com/caddy-dns/route53 v1.2.1 h1:qIdaJaNvwkXm8zYcBHpbIYiaLknpuKXr0JKJqv0cmCY=
 github.com/caddy-dns/route53 v1.2.1/go.mod h1:3Om6TiE6n+NhA3ejZVKRvAAC0ufyeGOHjtmWgi+s920=
 github.com/caddyserver/caddy/v2 v2.4.5/go.mod h1:YhfZAAh3jWSbG6rEEOM49FwxmcbLY2fZQVlo59Sc/80=
-github.com/caddyserver/caddy/v2 v2.6.0 h1:lHDynvM+sTOi9Aq4Y15b4FtkqzPB36WbUrZvVdwzTCA=
-github.com/caddyserver/caddy/v2 v2.6.0/go.mod h1:YFaWZkg/wx3xW8mCF1Ydazk8dWbBBu/tx7IagU+E9io=
+github.com/caddyserver/caddy/v2 v2.6.1 h1:EDqo59TyYWhXQnfde93Mmv4FJfYe00dO60zMiEt+pzo=
+github.com/caddyserver/caddy/v2 v2.6.1/go.mod h1:YFaWZkg/wx3xW8mCF1Ydazk8dWbBBu/tx7IagU+E9io=
 github.com/caddyserver/certmagic v0.14.5/go.mod h1:/0VQ5og2Jxa5yBQ8eT80wWS7fi/DgNy1uXeXRUJ1Wj0=
 github.com/caddyserver/certmagic v0.15.1/go.mod h1:/0VQ5og2Jxa5yBQ8eT80wWS7fi/DgNy1uXeXRUJ1Wj0=
 github.com/caddyserver/certmagic v0.17.1 h1:VrWANhQAj3brK7jAUKyN6XBHg56WsyorI/84Ilq1tCQ=
