@@ -1,7 +1,7 @@
 FROM caddy:2.6.1-builder as builder
 
 RUN xcaddy build v2.6.1 \
-    --with github.com/caddy-dns/route53@v1.2.1
+    --with github.com/caddy-dns/route53@v1.3.0
 
 FROM caddy:2.6.1
 
