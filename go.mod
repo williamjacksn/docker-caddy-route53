@@ -3,7 +3,7 @@ module github.com/williamjacksn/docker-caddy-route53
 go 1.19
 
 require (
-	github.com/caddy-dns/route53 v1.2.1
+	github.com/caddy-dns/route53 v1.3.0
 	github.com/caddyserver/caddy/v2 v2.6.1
 )
 
@@ -29,7 +29,7 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.1.0 // indirect
 	github.com/libdns/libdns v0.2.1 // indirect
-	github.com/libdns/route53 v1.2.2 // indirect
+	github.com/libdns/route53 v1.3.0 // indirect
 	github.com/lucas-clemente/quic-go v0.28.2-0.20220813150001-9957668d4301 // indirect
 	github.com/marten-seemann/qpack v0.2.1 // indirect
 	github.com/marten-seemann/qtls-go1-18 v0.1.2 // indirect
