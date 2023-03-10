@@ -6,3 +6,5 @@ RUN xcaddy build v2.6.4 \
 FROM caddy:2.6.4
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+RUN /usr/bin/caddy version
+RUN /usr/bin/caddy list-modules --skip-standard --versions
