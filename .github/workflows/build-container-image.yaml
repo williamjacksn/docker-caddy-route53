@@ -18,6 +18,8 @@ env:
 jobs:
   build:
     name: Build the container image
+    permissions:
+      packages: write
     runs-on: ubuntu-latest
     steps:
 
