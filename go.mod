@@ -3,7 +3,7 @@ module github.com/williamjacksn/docker-caddy-route53
 go 1.22
 
 require (
-	github.com/caddy-dns/route53 v1.4.0
+	github.com/caddy-dns/route53 v1.4.1
 	github.com/caddyserver/caddy/v2 v2.8.4
 )
 
