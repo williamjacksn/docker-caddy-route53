@@ -1,9 +1,9 @@
-FROM caddy:2.8.4-builder AS builder
+FROM caddy:2.9.1-builder AS builder
 
-RUN xcaddy build v2.8.4 \
+RUN xcaddy build v2.9.1 \
     --with github.com/caddy-dns/route53@v1.5.1
 
-FROM caddy:2.8.4
+FROM caddy:2.9.1
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 RUN /usr/bin/caddy version
