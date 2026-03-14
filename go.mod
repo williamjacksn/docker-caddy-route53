@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/caddy-dns/route53 v1.6.0
-	github.com/caddyserver/caddy/v2 v2.11.1
+	github.com/caddyserver/caddy/v2 v2.11.2
 )
 
 require (
@@ -46,7 +46,7 @@ require (
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	golang.org/x/crypto v0.48.0 // indirect
 	golang.org/x/mod v0.33.0 // indirect
-	golang.org/x/net v0.50.0 // indirect
+	golang.org/x/net v0.51.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
 	golang.org/x/sys v0.41.0 // indirect
 	golang.org/x/term v0.40.0 // indirect
