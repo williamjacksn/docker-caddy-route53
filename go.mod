@@ -3,7 +3,7 @@ module github.com/williamjacksn/docker-caddy-route53
 go 1.25.0
 
 require (
-	github.com/caddy-dns/route53 v1.6.0
+	github.com/caddy-dns/route53 v1.6.2
 	github.com/caddyserver/caddy/v2 v2.11.2
 )
 
@@ -29,7 +29,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/libdns/libdns v1.1.1 // indirect
-	github.com/libdns/route53 v1.6.0 // indirect
+	github.com/libdns/route53 v1.6.2 // indirect
 	github.com/mholt/acmez/v3 v3.1.6 // indirect
 	github.com/miekg/dns v1.1.72 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
